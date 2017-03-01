@@ -15,9 +15,17 @@ a{
 	
 }
 
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
+
+/* ---- Page wrap ---- */
+.page-wap{
+
+	min-height:calc(100vh-150px);
+}
+
 
 /* ---- Navigation ---- */
 
@@ -40,13 +48,42 @@ a{
 
 
 .top-brand-name{
-	
+
 	font-family:'Kaushan Script', cursive;;
 	display:inline-block;
 	padding:0 15px;
 	font-size: 2em;
 }
 
+.top-navigation{
+
+	display:block;
+	text-align: center;
+	margin-top:10px;
+}
+
+.top-navigation .nav{
+
+	margin:0;
+	padding:0;
+	
+}
+
+.top-navigation .nav .nav-item{
+
+	display:block;
+	list-style-type: none;
+	padding:1em 0;
+}
+
+.nav-link{
+
+	color:#FFF;
+	font-size: 0.9em;
+	padding:2em 0;
+
+
+}
 
 
 /* ---- Layout Containers ---- */
@@ -55,12 +92,14 @@ a{
 
 	background-color:#2C3E50;
 	padding: 1em 0;
+	height:auto;
 }
 
 .main-footer{
 
 	background-color:#ECF0F1;
 	padding: 2em 0;
+	height:150px;
 }
 
 .container{
@@ -96,14 +135,13 @@ a{
 .brand, 
 .top-navigation{
 
-	display: inline-block;
+	display: inline;
 	height:100%;
 }
 
 .brand{
 
 	float:left;
-	border:1px red solid;
 	width:240px;
 	text-align: left;
 }
@@ -112,5 +150,20 @@ a{
 
 	float:right;
 }
+
+.top-navigation .nav .nav-item{
+
+	display: inline;
+	margin-right: 10px;
+
+}
+
+.top-navigation .nav .nav-item .nav-link{
+
+	
+	padding: 1em 2em;
+
+}
+
 
 }
