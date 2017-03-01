@@ -15,6 +15,10 @@ a{
 	
 }
 
+body{
+
+	color:#7F8C8D;
+}
 
 /* ================================= 
   Base Layout Styles
@@ -87,7 +91,73 @@ a{
 
 }
 
+.nav span{
 
+	color:#FFF;
+}
+
+
+/* ---- Footer ---- */
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3{
+	width:100%;
+	
+	text-align: center;
+	
+
+}
+
+.footer-top ul li a{
+
+	color:#7F8C8D;
+}
+.footer-top ul{
+
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+
+.footer-top ul li{
+
+	list-style-type:none;
+	font-size:0.8em; 
+	padding:0.5em 0;
+}
+
+.footer-top ul li a:hover{
+
+	color:#2C3E50;
+}
+
+.footer-bottom{
+	margin-top: 30px;
+	width:100%;
+	text-align: center;
+	padding:10px;
+}
+
+
+.footer-images li img{
+
+	width:110px;
+	height:40px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4{
+
+	text-align: center;
+}
+
+.footer-top h5{
+
+	color:#2C3E50;
+}
 /* ---- Layout Containers ---- */
 
 .main-header{
@@ -100,16 +170,16 @@ a{
 
 .main-footer{
 
-	background-color:#7F8C8D;
+	background-color:#ECF0F1;
 	padding: 2em 0;
-	height:150px;
+	min-height:150px;
+
 }
 
 .container{
 	width:70%;
 	margin:0 auto;
 }
-
 
 .banner{
 
@@ -178,12 +248,12 @@ section.hero{
 .hero h2{
 
 	position: absolute;
-	top:40%;
+	top:30%;
 	text-align:center;
   	z-index: 1;
   	bottom: 0;
   	width:100%;
-  	color:#2C3E50;
+  	color:#fff;
   	font-family:'Kaushan Script', cursive;;
   	font-size: 5em;
 
@@ -192,8 +262,6 @@ section.hero{
 .bottom-icon-tile-pannel{
 
 	display: none;
-
-  
 
 }
 
@@ -237,14 +305,14 @@ section.hero{
 .top-navigation .nav .nav-item{
 
 	display: inline;
-	margin-right: 10px;
+	margin-right: 5px;
 
 }
 
 .top-navigation .nav .nav-item .nav-link{
 
 	
-	padding: 1em 2em;
+	padding: 1em 1em;
 
 }
 
@@ -256,14 +324,14 @@ section.hero{
 	position:absolute;
 	top:100px;
 	left:40%;
-	background-color:#2C3E50;
+	background-color:#fff;
 }
 
 
 .bottom-icon-tile-pannel{
 	display: flex;
 	position: absolute;
-	height:250px;
+	height:220px;
 	text-align:center;
   	z-index: 1;
   	bottom: 0;
@@ -289,8 +357,8 @@ section.hero{
 .icon-cube{
 	
 	position: relative;
-	height:100px;
-	width:100px;
+	height:80px;
+	width:80px;
 	float:left;
 	background-color: #2C3E50;
 	margin:10px;
@@ -356,4 +424,50 @@ section.hero{
 
 	color:#FFCC00;
 	font-size:2em;
+}
+
+/* ---- Footer ---- */
+.footer-top{
+	
+	width:100%;
+
+}
+
+
+
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4{
+		width:24%;
+		display:inline-block;
+		text-align: left;
+		/*border:1px solid red;*/
+		margin:0;
+}
+
+
+.footer-logo{
+
+	
+	vertical-align: top;
+	width:150px;
+	height:60px;
+}
+
+.footer-bottom .footer-images{
+
+	float:left;
+	margin: 0;
+	padding:0;
+}
+.footer-bottom .footer-images li{
+	list-style-type: none;
+	display: inline-block;
+}
+
+.copyright{
+
+	float:right;
 }
