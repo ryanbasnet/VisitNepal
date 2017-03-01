@@ -1,4 +1,11 @@
 /* ================================= 
+  Google fonts
+==================================== */
+
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+
+/* ================================= 
   Base Element Styles
 ==================================== */
 
@@ -14,10 +21,32 @@ a{
 
 /* ---- Navigation ---- */
 
-.brand-name{
+.brand{
 
 	margin:0;
+	text-decoration: none;
+	color:#FFF;
+	display:block;
+	text-align:center;
+	padding:10px 0;
+
 }
+
+.brand .header-logo{
+
+	color:#FFF !important;
+	font-size:50px;
+}
+
+
+.top-brand-name{
+	
+	font-family:'Kaushan Script', cursive;;
+	display:inline-block;
+	padding:0 15px;
+	font-size: 2em;
+}
+
 
 
 /* ---- Layout Containers ---- */
@@ -40,5 +69,48 @@ a{
 }
 
 /* ================================= 
+  Utility styles
+==================================== */
+
+.clearfix::after{
+
+	content: "";
+	display: table;
+	clear:both;
+}
+
+/* ================================= 
   Media Queries
 ==================================== */
+
+@media (min-width:776px){
+
+
+.main-header{
+
+	height:80px;
+	line-height: 80px;
+	padding:0;
+}
+
+.brand, 
+.top-navigation{
+
+	display: inline-block;
+	height:100%;
+}
+
+.brand{
+
+	float:left;
+	border:1px red solid;
+	width:240px;
+	text-align: left;
+}
+
+.top-navigation{
+
+	float:right;
+}
+
+}
