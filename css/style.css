@@ -19,6 +19,27 @@ body{
 
 	color:#7F8C8D;
 }
+/* ================================= 
+  Base Heading Styles
+==================================== */
+
+section h3 {
+
+	
+	font-weight: 400;
+	color:#2C3E50;
+	text-align: center;
+	padding:1em 0;
+	text-transform: uppercase;
+	font-size: 25px;
+	line-height: 18px;
+}
+p{
+	font-weight: lighter;
+	font-size: 14px;
+	line-height: 22px;
+}
+
 
 /* ================================= 
   Base Layout Styles
@@ -31,6 +52,10 @@ body{
 
 }
 
+section{
+
+	padding:2em 0;
+}
 
 /* ---- Navigation ---- */
 
@@ -177,7 +202,7 @@ body{
 }
 
 .container{
-	width:70%;
+	width:80%;
 	margin:0 auto;
 }
 
@@ -198,6 +223,12 @@ body{
 	clear:both;
 }
 
+.thumbnail{
+
+	border:1px solid #7f8c8d;
+	padding:10px;
+
+}
 
 /* ================================= 
   Page specific
@@ -248,7 +279,7 @@ section.hero{
 .hero h2{
 
 	position: absolute;
-	top:30%;
+	top:15%;
 	text-align:center;
   	z-index: 1;
   	bottom: 0;
@@ -265,7 +296,25 @@ section.hero{
 
 }
 
+.article-wrapper{
 
+	text-align:center;
+}
+.deal{
+
+	width:100%;
+	height:300px;
+	margin:10px 10px;
+}
+.deal img{
+
+	width:100%;
+	height:200px;
+}
+.deal h5{
+
+	text-align: center;
+}
 
 /* ================================= 
   Media Queries
@@ -319,11 +368,11 @@ section.hero{
 .hero h2:after{
 
 	content:"";
-	width: 20%;
+	width: 30%;
 	height:2px;
 	position:absolute;
-	top:100px;
-	left:40%;
+	top:90px;
+	left:35%;
 	background-color:#fff;
 }
 
@@ -470,4 +519,14 @@ section.hero{
 .copyright{
 
 	float:right;
+}
+
+
+
+.deal {
+
+	display: inline-block;
+	margin: 10px 20px;
+	width:250px;
+	height:150px;
 }
