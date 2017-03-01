@@ -37,7 +37,7 @@ a{
 	color:#FFF;
 	display:block;
 	text-align:center;
-	padding:10px 0;
+	padding-top:10px;
 
 }
 
@@ -52,7 +52,7 @@ a{
 
 	font-family:'Kaushan Script', cursive;;
 	display:inline-block;
-	padding:0 15px;
+	padding: 0;
 	font-size: 2em;
 	color:#FFF;
 }
@@ -95,6 +95,7 @@ a{
 	background-color:#2C3E50;
 	padding: 1em 0;
 	height:auto;
+	z-index:1;
 }
 
 .main-footer{
@@ -109,6 +110,13 @@ a{
 	margin:0 auto;
 }
 
+
+.banner{
+
+	width:100%;
+	background-color: red;
+	min-height:calc(100vh - 80px);
+}
 /* ================================= 
   Utility styles
 ==================================== */
@@ -120,6 +128,79 @@ a{
 	clear:both;
 }
 
+
+/* ================================= 
+  Page specific
+==================================== */
+
+
+
+/* ---- index ---- */
+
+section.hero{
+	
+	position: relative;
+  	bottom: 0%;
+  	left: 0%;
+  	min-height:calc(100vh - 80px);
+  	width: 100%;
+  	overflow: hidden;
+  	background: #333;
+  	padding:0;
+  	margin:0;
+	
+	
+	}
+
+
+.intro-video{
+
+	position: absolute;
+	top:0;
+  z-index: 0;
+  bottom: 0;
+  width:100%;
+
+
+
+}
+
+
+.video-overlay{
+
+	position: absolute;
+	top:0;
+  z-index: 1;
+  bottom: 0;
+  width:100%;
+  background-color: #FFCC00;
+  opacity:0.2;
+}
+
+.hero h2{
+
+	position: absolute;
+	top:40%;
+	text-align:center;
+  z-index: 1;
+  bottom: 0;
+  width:100%;
+  color:#2C3E50;
+  font-family:'Kaushan Script', cursive;;
+  font-size: 5em;
+
+}
+.hero h2:after{
+
+	content:"";
+	width: 20%;
+	height:2px;
+	position:absolute;
+	top:100px;
+	left:40%;
+	background-color:#2C3E50;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
@@ -129,7 +210,7 @@ a{
 
 .main-header{
 
-	height:80px;
+	height:90px;
 	line-height: 80px;
 	padding:0;
 }
@@ -145,7 +226,9 @@ a{
 
 	float:left;
 	width:240px;
+	height:80px;
 	text-align: left;
+
 }
 
 .top-navigation{
