@@ -459,3 +459,22 @@ template {
 [hidden] {
   display: none;
 }
+
+/* ul , ol
+   ========================================================================== */
+
+/**
+ * remove padding, margin and list style type
+ */
+
+
+ul,ol{
+
+  margin:0;
+  padding:0;
+}
+
+ul li , ol li {
+
+  list-style-type: none;
+}
