@@ -21,9 +21,10 @@ a{
 ==================================== */
 
 /* ---- Page wrap ---- */
-.page-wap{
+.page-wrap{
 
-	min-height:calc(100vh-150px);
+	min-height:calc(100vh - 150px);
+
 }
 
 
@@ -42,7 +43,7 @@ a{
 
 .brand .header-logo{
 
-	color:#FFF !important;
+	color:#FFCC00 !important;
 	font-size:50px;
 }
 
@@ -53,6 +54,7 @@ a{
 	display:inline-block;
 	padding:0 15px;
 	font-size: 2em;
+	color:#FFF;
 }
 
 .top-navigation{
@@ -97,7 +99,7 @@ a{
 
 .main-footer{
 
-	background-color:#ECF0F1;
+	background-color:#7F8C8D;
 	padding: 2em 0;
 	height:150px;
 }
