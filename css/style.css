@@ -1,0 +1,44 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+a{
+
+	text-decoration: none;
+	
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.brand-name{
+
+	margin:0;
+}
+
+
+/* ---- Layout Containers ---- */
+
+.main-header{
+
+	background-color:#2C3E50;
+	padding: 1em 0;
+}
+
+.main-footer{
+
+	background-color:#ECF0F1;
+	padding: 2em 0;
+}
+
+.container{
+	width:70%;
+	margin:0 auto;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
