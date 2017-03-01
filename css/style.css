@@ -55,6 +55,7 @@ p{
 section{
 
 	padding:2em 0;
+	text-align: center;
 }
 
 /* ---- Navigation ---- */
@@ -121,7 +122,17 @@ section{
 	color:#FFF;
 }
 
+.inverse-banner{
 
+	position:absolute;
+	bottom:0;
+	height: 60px;
+	background-color: #000;
+	width:100%;
+	opacity:0.9;
+	margin:0 10px;
+	text-transform: uppercase;
+}
 /* ---- Footer ---- */
 
 .footer-col-1,
@@ -304,7 +315,7 @@ section.hero{
 
 	width:100%;
 	height:300px;
-	margin:10px 10px;
+	margin:10px 0;
 }
 .deal img{
 
@@ -316,6 +327,21 @@ section.hero{
 	text-align: center;
 }
 
+.destination{
+
+	width:90%;
+	height:300px;
+	margin:10px 0;
+	position:relative;
+	
+}
+
+.destination img{
+
+	width:100%;
+	height:300px;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
@@ -324,10 +350,12 @@ section.hero{
 
 
 .main-header{
-
+	width:100%;
 	height:90px;
 	line-height: 80px;
 	padding:0;
+	position:fixed;
+	z-index: 999;
 }
 
 .brand, 
@@ -374,6 +402,7 @@ section.hero{
 	top:90px;
 	left:35%;
 	background-color:#fff;
+
 }
 
 
@@ -529,4 +558,28 @@ section.hero{
 	margin: 10px 20px;
 	width:250px;
 	height:150px;
+}
+
+.destination {
+	display: inline-block;
+	width:45%;
+	height:300px;
+	position: relative;
+	box-sizing:border-box;
+	overflow:hidden;
+}
+
+.destination img{
+
+	width:100%;
+	height:100%;
+}
+
+@media (min-width:1024px){
+
+	.destination{
+
+		width:30%;
+		margin:10px 10px;
+	}
 }
