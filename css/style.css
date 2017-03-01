@@ -157,11 +157,9 @@ section.hero{
 
 	position: absolute;
 	top:0;
-  z-index: 0;
-  bottom: 0;
-  width:100%;
-
-
+  	z-index: 0;
+  	bottom: 0;
+  	width:100%;
 
 }
 
@@ -170,11 +168,11 @@ section.hero{
 
 	position: absolute;
 	top:0;
-  z-index: 1;
-  bottom: 0;
-  width:100%;
-  background-color: #FFCC00;
-  opacity:0.2;
+  	z-index: 1;
+  	bottom: 0;
+  	width:100%;
+  	background-color: #FFCC00;
+  	opacity:0.2;
 }
 
 .hero h2{
@@ -182,24 +180,24 @@ section.hero{
 	position: absolute;
 	top:40%;
 	text-align:center;
-  z-index: 1;
-  bottom: 0;
-  width:100%;
-  color:#2C3E50;
-  font-family:'Kaushan Script', cursive;;
-  font-size: 5em;
+  	z-index: 1;
+  	bottom: 0;
+  	width:100%;
+  	color:#2C3E50;
+  	font-family:'Kaushan Script', cursive;;
+  	font-size: 5em;
 
 }
-.hero h2:after{
 
-	content:"";
-	width: 20%;
-	height:2px;
-	position:absolute;
-	top:100px;
-	left:40%;
-	background-color:#2C3E50;
+.bottom-icon-tile-pannel{
+
+	display: none;
+
+  
+
 }
+
+
 
 /* ================================= 
   Media Queries
@@ -250,5 +248,112 @@ section.hero{
 
 }
 
+.hero h2:after{
 
+	content:"";
+	width: 20%;
+	height:2px;
+	position:absolute;
+	top:100px;
+	left:40%;
+	background-color:#2C3E50;
+}
+
+
+.bottom-icon-tile-pannel{
+	display: flex;
+	position: absolute;
+	height:250px;
+	text-align:center;
+  	z-index: 1;
+  	bottom: 0;
+  	width:100%;
+}
+
+.left-panel,.right-panel{
+
+	width:50%;
+	height:100%;
+}
+
+
+.left-panel,.right-panel{
+
+	width:50%;
+	height:100%;
+
+
+}
+
+
+.icon-cube{
+	
+	position: relative;
+	height:100px;
+	width:100px;
+	float:left;
+	background-color: #2C3E50;
+	margin:10px;
+	opacity:0.8;
+	overflow: hidden;
+	
+
+}
+
+.icon-pane,.cube-slider{
+
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+.icon-pane,.cube-slider{
+
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.cube-slider{
+
+	background-color: #FFF;
+	z-index: 9;
+	top:-100px;
+	font-size: 0.7em;
+	color:#2C3E50;
+	transition:all 0.3s ease-in;
+}
+
+.icon-pane{
+	
+	z-index: 7;
+	
+}
+
+.left-panel .icon-cube{
+
+	float:left;
+
+}
+
+.right-panel .icon-cube{
+
+	float:right;
+}
+
+.icon-cube:nth-child(2){
+
+	clear:both;
+}
+
+.icon-cube:hover .cube-slider {
+	
+	transform: translateY(100px);
+
+}
+
+
+.icon-cube i{
+
+	color:#FFCC00;
+	font-size:2em;
 }
