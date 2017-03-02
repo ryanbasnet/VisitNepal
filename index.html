@@ -10,6 +10,8 @@
 	<title>VisitNepal | HTML5-CSS3 Template</title>
 	<!-- normalise css -->
 	<link rel="stylesheet" href="css/normalize.css">
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" >
 	<!-- custom css -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- fontawesome -->
@@ -21,8 +23,56 @@
 <div class="page-wrap clearfix">
 	<!-- main header -->
 	<header class="main-header clearfix">
+		<nav class="navbar navbar-toggleable-md navbar-light justify-content-end" id="navbar-top-custom">
+			<div class="container">
+				
+				<!-- navigation toggle button  -->
+				<button class="navbar-toggler navbar-toggler-right hamburger" 
+  					type="button" 
+  					data-toggle="collapse" 
+  					data-target="#navbarSupportedContent" 
+  					aria-controls="navbarSupportedContent" 
+  					aria-expanded="false" 
+  					aria-label="Toggle navigation">
+    				<span class="navbar-toggler-icon"></span>
+  				</button>
 
-		<div class="container">
+  				<!-- nabar logo and brand name customised -->
+				<a class="navbar-brand" href="#">
+					<i class="fa fa-grav header-logo" ></i>
+					<span class="top-brand-name">Visit Nepal</span>
+				</a>
+				
+				<!-- navigation links -->
+				<ul class="navbar-nav mr-auto" id="test">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Destinations <span><i class="fa fa-caret-down"></i></span></a>
+						
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Things to do <span><i class="fa fa-caret-down"></i></span></a>
+						
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Accomodation <span><i class="fa fa-caret-down"></i></span></a>
+						
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Events <span><i class="fa fa-caret-down"></i></span></a>
+						
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Deals <span><i class="fa fa-caret-down"></i></span></a>
+						
+					</li>
+				</ul>
+				
+			</div>
+  			
+  			
+
+
+		<!-- <div class="container">
 			<a href="" class="brand">
 				<i class="fa fa-grav header-logo" ></i>
 				<span class="top-brand-name">Visit Nepal</span>
@@ -52,7 +102,7 @@
 					</li>
 				</ul>
 			</nav>
-		</div>
+		</div> -->
 	</header>
 	
 	<!-- hero vide -->
@@ -219,8 +269,9 @@
 
 <footer class="main-footer">
 <div class="container">
-	<div class="footer-top">
-	<div class="footer-col-1">
+<div class="row footer-top">
+	
+	<div class="col-md-3 footer-top-col">
 		<h5>DESTINATION</h5>
 		<ul>
 			<li><a href="">Home</a></li>
@@ -230,7 +281,7 @@
 			<li><a href="">Adventure</a></li>
 		</ul>
 	</div>
-	<div class="footer-col-2">
+	<div class="col-md-3 footer-top-col">
 		<h5>THINGS TO DO</h5>
 		<ul>
 			<li><a href="">Home</a></li>
@@ -240,7 +291,7 @@
 			<li><a href="">Adventure</a></li>
 		</ul>
 	</div>
-	<div class="footer-col-3">
+	<div class="col-md-3 footer-top-col">
 		<h5>EVENTS</h5>
 		<ul>
 			<li><a href="">Home</a></li>
@@ -250,14 +301,15 @@
 			<li><a href="">Adventure</a></li>
 		</ul>
 	</div>
-	<div class="footer-col-4"><ul>
+	<div class="col-md-3 footer-top-col"><ul>
 		<h5>INFORMATION</h5>
 			<li><a href="">Home</a></li>
 			<li><a href="">City</a></li>
 			<li><a href="">Hotels</a></li>
 			<li><a href="">Safari</a></li>
 			<li><a href="">Adventure</a></li>
-		</ul></div>
+		</ul>
+	</div>
 	
 	</div>
 	<div class="footer-bottom">

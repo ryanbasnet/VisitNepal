@@ -1,3 +1,19 @@
+
+
+
+
+/* ================================= 
+  Color Palettes 
+==================================== */
+
+
+
+	/* 
+		Dark Blue	: #2C3E50;
+		Dark Yellow : #FFCC00
+		Light Gray 	: #ECF0F1;
+	*/
+
 /* ================================= 
   Google fonts
 ==================================== */
@@ -18,6 +34,12 @@ a{
 body{
 
 	color:#7F8C8D;
+}
+
+h5{
+
+	font-size: 0.9em;
+	font-weight: 600;
 }
 /* ================================= 
   Base Heading Styles
@@ -45,11 +67,39 @@ p{
   Base Layout Styles
 ==================================== */
 
-/* ---- Page wrap ---- */
+
+
+/* ---- Layout Containers ---- */
+
 .page-wrap{
 
 	min-height:calc(100vh - 150px);
 
+}
+
+.main-header{
+
+	background-color:#2C3E50;
+	padding:0;
+	height:auto;
+	z-index:999;
+	position:fixed;
+	width:100%;
+}
+
+.main-footer{
+
+	background-color:#ECF0F1;
+	padding: 2rem 0;
+	min-height:150px;
+
+}
+
+.container{
+
+	width:80%;
+	margin:0 auto;
+	
 }
 
 section{
@@ -60,18 +110,52 @@ section{
 
 /* ---- Navigation ---- */
 
-.brand{
+#navbar-top-custom{
 
-	margin:0;
-	text-decoration: none;
-	color:#FFF;
-	display:block;
-	text-align:center;
-	padding-top:10px;
+	
+	height:100%;
 
 }
 
-.brand .header-logo{
+/*---- navbar logo to hide belowtablet device ----*/
+.navbar-brand .header-logo{
+
+	color:#FFCC00 !important;
+	font-size:50px;
+	display:none;
+}
+
+.navbar .top-brand-name{
+
+	font-family:'Kaushan Script', cursive;;
+	display:inline-block;
+	padding: 0;
+	font-size: 1.5em;
+	color:#FFF;
+}
+
+.navbar-light .hamburger{
+
+	border-color:#FFCC00;
+	margin-bottom: 0 !important;
+	bottom:0.6rem;
+}
+
+ .navbar-light .navbar-toggler{
+
+	color:red;
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+
+	color:#FFF !important;
+	font-size: 0.9rem;
+}
+
+
+
+.navbar-brand .header-logo{
 
 	color:#FFCC00 !important;
 	font-size:50px;
@@ -87,89 +171,52 @@ section{
 	color:#FFF;
 }
 
-.top-navigation{
-
-	display:block;
-	text-align: center;
-	margin-top:10px;
-}
-
-.top-navigation .nav{
-
-	margin:0;
-	padding:0;
-	
-}
-
-.top-navigation .nav .nav-item{
-
-	display:block;
-	list-style-type: none;
-	padding:1em 0;
-}
-
-.nav-link{
-
-	color:#FFF;
-	font-size: 0.9em;
-	padding:2em 0;
-
-
-}
-
-.nav span{
-
-	color:#FFF;
-}
-
-.inverse-banner{
-
-	position:absolute;
-	bottom:0;
-	height: 60px;
-	background-color: #000;
-	width:100%;
-	opacity:0.9;
-	margin:0 10px;
-	text-transform: uppercase;
-}
 /* ---- Footer ---- */
 
-.footer-col-1,
-.footer-col-2,
-.footer-col-3{
-	width:100%;
-	
-	text-align: center;
-	
+.footer-top .footer-top-col{
 
+	text-align: left;
 }
 
-.footer-top ul li a{
+.footer-top h5{
 
-	color:#7F8C8D;
+	color:#2C3E50;
 }
+
 .footer-top ul{
 
 	margin:0;
 	padding:0;
 	list-style-type: none;
+	text-align: left;
 }
-
 .footer-top ul li{
 
 	list-style-type:none;
 	font-size:0.8em; 
 	padding:0.5em 0;
+
 }
+
+
+.footer-top ul li a{
+
+	color:#7F8C8D;
+}
+
+
 
 .footer-top ul li a:hover{
 
 	color:#2C3E50;
 }
 
+
+
+
 .footer-bottom{
-	margin-top: 30px;
+	
+	margin: 30px;
 	width:100%;
 	text-align: center;
 	padding:10px;
@@ -182,40 +229,9 @@ section{
 	height:40px;
 }
 
-.footer-col-1,
-.footer-col-2,
-.footer-col-3,
-.footer-col-4{
 
-	text-align: center;
-}
 
-.footer-top h5{
 
-	color:#2C3E50;
-}
-/* ---- Layout Containers ---- */
-
-.main-header{
-
-	background-color:#2C3E50;
-	padding: 1em 0;
-	height:auto;
-	z-index:1;
-}
-
-.main-footer{
-
-	background-color:#ECF0F1;
-	padding: 2em 0;
-	min-height:150px;
-
-}
-
-.container{
-	width:80%;
-	margin:0 auto;
-}
 
 .banner{
 
@@ -223,6 +239,15 @@ section{
 	background-color: red;
 	min-height:calc(100vh - 80px);
 }
+
+
+/* ================================= 
+  Utility styles
+==================================== */
+
+
+
+
 /* ================================= 
   Utility styles
 ==================================== */
@@ -234,12 +259,6 @@ section{
 	clear:both;
 }
 
-.thumbnail{
-
-	border:1px solid #7f8c8d;
-	padding:10px;
-
-}
 
 /* ================================= 
   Page specific
@@ -346,52 +365,77 @@ section.hero{
   Media Queries
 ==================================== */
 
-@media (min-width:776px){
 
 
-.main-header{
-	width:100%;
-	height:90px;
-	line-height: 80px;
-	padding:0;
-	position:fixed;
-	z-index: 999;
+/* ---- Small devices (landscape phones, 576px and up) ---- */
+@media (min-width: 576px) { 
 }
 
-.brand, 
-.top-navigation{
+/* ----  Medium devices (tablets, 768px and up) ---- */
+@media (min-width: 768px) { 
 
-	display: inline;
-	height:100%;
-}
+	/*---- navbar logo to appear above tablet device ----*/
 
-.brand{
+	.navbar-brand .header-logo{
 
-	float:left;
-	width:240px;
-	height:80px;
-	text-align: left;
+		color:#FFCC00 !important;
+		font-size:50px;
+		display:inline-block;
+	}
 
-}
+	/*---- Footer  ----*/
 
-.top-navigation{
-
-	float:right;
-}
-
-.top-navigation .nav .nav-item{
-
-	display: inline;
-	margin-right: 5px;
-
-}
-
-.top-navigation .nav .nav-item .nav-link{
+	.footer-logo{
 
 	
-	padding: 1em 1em;
+		vertical-align: top;
+		width:150px;
+		height:60px;
+	}
+
+	.footer-bottom .footer-images{
+
+		float:left;
+		margin: 0;
+		padding:0;
+	}
+
+	.footer-bottom .footer-images li{
+	
+		list-style-type: none;
+		display: inline-block;
+	}
+
+	.copyright{
+
+		float:right;
+	}
+
+
+
+ }
+
+/* ---- Large devices (desktops, 992px and up) ---- */
+@media (min-width: 992px) { 
+
+	#navbar-top-custom .navbar-nav{
+
+		margin-left:50px;
+}	
 
 }
+
+/* ---- Extra large devices (large desktops, 1200px and up) ---- */
+@media (min-width: 1200px) { 
+
+	#navbar-top-custom .navbar-nav{
+
+		margin-left:250px;
+	}
+}
+
+@media (min-width:776px){
+
 
 .hero h2:after{
 
@@ -505,25 +549,6 @@ section.hero{
 }
 
 /* ---- Footer ---- */
-.footer-top{
-	
-	width:100%;
-
-}
-
-
-
-
-.footer-col-1,
-.footer-col-2,
-.footer-col-3,
-.footer-col-4{
-		width:24%;
-		display:inline-block;
-		text-align: left;
-		/*border:1px solid red;*/
-		margin:0;
-}
 
 
 .footer-logo{
@@ -582,4 +607,26 @@ section.hero{
 		width:30%;
 		margin:10px 10px;
 	}
+}
+
+
+/*misc*/
+
+
+
+.nav span{
+
+	color:#FFF;
+}
+
+.inverse-banner{
+
+	position:absolute;
+	bottom:0;
+	height: 60px;
+	background-color: #000;
+	width:100%;
+	opacity:0.9;
+	margin:0 10px;
+	text-transform: uppercase;
 }
