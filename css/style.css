@@ -184,6 +184,65 @@ section{
 	font-size: 2em;
 	color:#FFF;
 }
+/*---- Hero Video ----*/
+
+#hero{
+
+	width:100%;
+	height:100vh;
+	position:Relative;
+	padding:0;
+	overflow: hidden;
+}
+
+
+.intro-video{
+
+	height:100%;
+	width: 100%;
+	object-fit:cover;
+
+}
+
+
+.video-overlay{
+
+	position: absolute;
+	bottom:0;
+  	z-index: 1;
+  	bottom: 0;
+  	width:100%;
+  	min-height: 100%;
+  	/*background-color: #FFCC00;*/
+  	opacity:0.2;
+}
+
+#hero h2{
+
+	position: absolute;
+	top:35%;
+	text-align:center;
+  	z-index: 1;
+  	
+  	width:100%;
+  	color:#fff;
+  	font-family:'Kaushan Script', cursive;;
+  	font-size: 5em;
+
+}
+
+.bottom-icon-tile-pannel{
+
+	display: none;
+
+}
+
+.article-wrapper{
+
+	text-align:center;
+}
+
+
 
 /* ---- Package ---- */
 
@@ -198,6 +257,8 @@ section{
 	height:auto;
 	text-align: center !important;
 	padding-bottom:20px;
+	background-color: #2C3E50;
+	color:#FFF;
 	
 }
 .package-card .card-img-top{
@@ -215,7 +276,7 @@ section{
 
 .package-price{
 
-	color: #2C3E50;
+	color: #FFF;
 	line-height: 40px;
 	font-size: 30px;
 	font-weight: 800;
@@ -227,11 +288,12 @@ section{
 
 .package-menu li{
 	
-	color: #2C3E50;
+	color: #FFCC00;
 	text-align: center;
-	border-bottom: 1px dotted #2C3E50;
+	border-bottom: 1px dotted #FFF;
 	padding:10px 10px;
 	width:150px;
+	font-size: 0.9em;
 }
 
 .package-intro{
@@ -242,13 +304,73 @@ section{
 
 .btn-price{
 	
-	background-color: #2C3E50;
-	color:#FFCC00;
+	background-color: #FFCC00;
+	color:#2C3E50;
 	width:150px;
 	text-align: center;
 	margin:0 auto;
 	margin-top: 30px;
 }
+
+/* ---- Things-to-do ---- */
+
+
+
+.things-to-do-wrapper{
+
+	padding:0;
+}
+
+.things-to-do-card{
+	position: relative;
+	width:100%;
+	height:250px;
+	border-radius: 0px;
+	border:none;
+	overflow: hidden;
+
+}
+
+.things-to-do{
+
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+
+.things-to-do-overlay{
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	z-index: 3;
+	top:0;
+	opacity: 0;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	transition:all 0.3s ease;
+}
+h4.things-to-do-heading{
+	
+	margin:0 auto;
+	position:absolute;
+	top:400px;
+	transition:all 0.4s ease;
+	color:#FFF;
+	font-size: 1em;
+}
+.things-to-do-wrapper:hover .things-to-do-overlay{
+
+	opacity:0.6;
+}
+
+.things-to-do-wrapper:hover .things-to-do-heading{
+
+	top:40%;
+
+	}
 /* ---- Events ---- */
 
 .event-wrapper{
@@ -448,12 +570,6 @@ button.addon-btn{
 }
 
 
-/* ================================= 
-  Utility styles
-==================================== */
-
-
-
 
 /* ================================= 
   Utility styles
@@ -475,98 +591,8 @@ button.addon-btn{
 
 /* ---- index ---- */
 
-section.hero{
-	
-	position: relative;
-  	bottom: 0%;
-  	left: 0%;
-  	min-height:calc(100vh - 80px);
-  	width: 100%;
-  	overflow: hidden;
-  	background: #333;
-  	padding:0;
-  	margin:0;
-	
-	
-	}
 
 
-.intro-video{
-
-	position: absolute;
-	top:0;
-  	z-index: 0;
-  	bottom: 0;
-  	width:100%;
-
-}
-
-
-.video-overlay{
-
-	position: absolute;
-	top:0;
-  	z-index: 1;
-  	bottom: 0;
-  	width:100%;
-  	background-color: #FFCC00;
-  	opacity:0.2;
-}
-
-.hero h2{
-
-	position: absolute;
-	top:15%;
-	text-align:center;
-  	z-index: 1;
-  	bottom: 0;
-  	width:100%;
-  	color:#fff;
-  	font-family:'Kaushan Script', cursive;;
-  	font-size: 5em;
-
-}
-
-.bottom-icon-tile-pannel{
-
-	display: none;
-
-}
-
-.article-wrapper{
-
-	text-align:center;
-}
-.deal{
-
-	width:100%;
-	height:300px;
-	margin:10px 0;
-}
-.deal img{
-
-	width:100%;
-	height:200px;
-}
-.deal h5{
-
-	text-align: center;
-}
-
-.destination{
-
-	width:90%;
-	height:300px;
-	margin:10px 0;
-	position:relative;
-	
-}
-
-.destination img{
-
-	width:100%;
-	height:300px;
-}
 
 /* ================================= 
   Media Queries
@@ -609,7 +635,7 @@ section.hero{
 		display:inline-block;
 	}
 
-	.hero h2:after{
+	#hero h2:after{
 
 	content:"";
 	width: 30%;
@@ -655,11 +681,6 @@ section.hero{
   	width:100%;
 }
 
-.left-panel,.right-panel{
-
-	width:50%;
-	height:100%;
-}
 
 
 .left-panel,.right-panel{
@@ -707,6 +728,11 @@ section.hero{
 	color:#2C3E50;
 	transition:all 0.3s ease-in;
 }
+.cube-slider h4{
+
+	color:;
+	font-size: 0.9em;
+}
 
 .icon-pane{
 	
@@ -745,7 +771,7 @@ section.hero{
 
 .package-wrapper{
 
-	padding:20px 80px;
+	padding:20px 20px;
 }
 
 
@@ -758,6 +784,9 @@ section.hero{
 		margin-left:50px;
 }	
 
+
+
+
 }
 
 /* ---- Extra large devices (large desktops, 1200px and up) ---- */
@@ -767,24 +796,10 @@ section.hero{
 
 		margin-left:250px;
 	}
+	.package-wrapper{
+
+	padding:20px 20px;
 }
 
-@media (min-width:776px){
-
-
-
-
-
-
-
-
-
-/*misc*/
-
-
-
-.nav span{
-
-	color:#FFF;
 }
 
