@@ -171,6 +171,14 @@ section{
 	color:#FFF;
 }
 
+/* ---- Subscription ---- */
+
+button.addon-btn{
+
+	background-color: #5cb85c;
+	color:#FFF;
+}
+
 /* ---- Footer ---- */
 
 .footer-top .footer-top-col{
