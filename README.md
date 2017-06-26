@@ -1,2 +1,4 @@
 # VisitNepal
-HTML5/CSS3 template landing page for travel business
+HTML5 landing page template.
+#Author
+Ryan Basnet
