@@ -1,0 +1,29 @@
+{
+  "name": "visitnepal",
+  "version": "1.0.0",
+  "description": "bootstrap landing page template",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanbasnet/VisitNepal.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "landing",
+    "page",
+    "html5",
+    "template"
+  ],
+  "author": "ryan basnet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanbasnet/VisitNepal/issues"
+  },
+  "homepage": "https://github.com/ryanbasnet/VisitNepal#readme",
+  "dependencies": {
+    "bower": "^1.8.0"
+  }
+}

@@ -1,175 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- favicon -->
 	<link href="images/logo/favicon.ico" rel="icon" type="image/x-icon" />
-	
+
 	<!-- site tile -->
-	<title>VisitNepal | HTML5-CSS3 Template</title>
+	<title>VisitNepal | Template</title>
 	<!-- normalise css -->
-	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="src/assets/css/normalize.css">
 	<!-- bootstrap css -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" >
-	<!-- custom css -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 	<!-- fontawesome -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- custom css -->
+	<link rel="stylesheet" href="src/assets/css/style.css">
+
 
 </head>
+
 <body>
-<!-- page-wrap -->
+	<!-- page-wrap -->
 	<!-- main header -->
 	<header class="main-header clearfix">
-		<nav class="navbar navbar-toggleable-md navbar-light justify-content-end" id="navbar-top-custom">
+		<nav class="navbar navbar-toggleable-md navbar-light" id="navbar-top-custom">
 			<div class="container">
-				
 				<!-- navigation toggle button  -->
-				<button class="navbar-toggler navbar-toggler-right hamburger" 
-  					type="button" 
-  					data-toggle="collapse" 
-  					data-target="#navbarSupportedContent" 
-  					aria-controls="navbarSupportedContent" 
-  					aria-expanded="false" 
-  					aria-label="Toggle navigation">
+				<button class="navbar-toggler navbar-toggler-right" id="hamburger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     				<span class="navbar-toggler-icon"></span>
   				</button>
 
-  				<!-- nabar logo and brand name customised -->
+				<!-- nabar logo and brand name -->
 				<a class="navbar-brand" href="#">
 					<i class="fa fa-grav header-logo" ></i>
 					<span class="top-brand-name">Visit Nepal</span>
 				</a>
-				
-				<!-- navigation links -->
-				<ul class="navbar-nav mr-auto" id="test">
-					<li class="nav-item">
-						<a class="nav-link" href="#">Destinations <span><i class="fa fa-caret-down"></i></span></a>
-						
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Things to do <span><i class="fa fa-caret-down"></i></span></a>
-						
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Accomodation <span><i class="fa fa-caret-down"></i></span></a>
-						
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Events <span><i class="fa fa-caret-down"></i></span></a>
-						
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Deals <span><i class="fa fa-caret-down"></i></span></a>
-						
-					</li>
-				</ul>
-				
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto" id="test">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          					   Things to do
+         					</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="#">Safari</a>
+								<a class="dropdown-item" href="#">Adventure</a>
+								<a class="dropdown-item" href="#">Culture and Heritage</a>
+								<a class="dropdown-item" href="#">Food and Places</a>
+							</div>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#">Accomodation</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#">Events</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#">Deals</a>
+						</li>
+					</ul>
+					<!--navbar serach form-->
+					<form class="form-inline my-2 my-lg-0" action="#">
+						<input class="form-control mr-sm-2" type="text" placeholder="Search">
+						<button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+					</form>
+				</div>
+				<!-- /.collapse-navbar -->
 			</div>
+			<!-- /.container -->
+		</nav>
 	</header>
 
-	<!--Video Section-->
+	<!--hero Section-->
 	<section id="hero">
-	
-	<video class="intro-video" autoplay loop>
+		<a href="#" class="video-audio"><i class="fa fa-volume-up volume"></i></a>
+		<video class="intro-video" autoplay>
 			<source src="media/travel-video-demo.mp4" type="video/mp4">
-		</video >
-
-		
-	
-		<div class="video-overlay">
-
-
-		</div>
+		</video>
+		<!-- video-overlay -->
+		<!-- not applied change css -->
+		<!--<div class="video-overlay">
+		</div>-->
 		<h2>Naturally Nepal</h2>
 
+		<!--bottom-icon-tile -panel-->
 		<div class="bottom-icon-tile-pannel hidden-sm-down">
-		<div class="left-panel">
-			<div class="icon-cube">
-				<div class="cube-slider">
-					<h4>Mountain Flight</h4>
+			<div class="left-panel">
+				<div class="icon-cube">
+					<div class="cube-slider">
+						<h4>Mountain Flight</h4>
+					</div>
+					<div class="icon-pane">
+						<i class="fa fa-plane"></i>
+					</div>
 				</div>
-				<div class="icon-pane">
-					<i class="fa fa-plane"></i>
+				<div class="icon-cube">
+					<div class="cube-slider">
+						<h4>Mountain Bike</h4>
+					</div>
+					<div class="icon-pane">
+						<i class="fa fa-motorcycle"></i>
+					</div>
 				</div>
-			</div>
-			<div class="icon-cube">
-				<div class="cube-slider">
-					<h4>Mountain Bike</h4>
+				<div class="icon-cube">
+					<div class="cube-slider">
+						<h4>Wild Life</h4>
+					</div>
+					<div class="icon-pane">
+						<i class="fa fa-pagelines"></i>
+					</div>
 				</div>
-				<div class="icon-pane">
-					<i class="fa fa-motorcycle"></i>
+				<div class="icon-cube">
+					<div class="cube-slider">
+						<h4>Camping</h4>
+					</div>
+					<div class="icon-pane">
+						<i class="fa fa-fire"></i>
+					</div>
 				</div>
-			</div>
-			<div class="icon-cube">
-				<div class="cube-slider">
-					<h4>Wild Life</h4>
-				</div>
-				<div class="icon-pane">
-					<i class="fa fa-pagelines"></i>
-				</div>
-			</div>
-			<div class="icon-cube">
-				<div class="cube-slider">
-					<h4>Camping</h4>
-				</div>
-				<div class="icon-pane">
-					<i class="fa fa-fire"></i>
-				</div>
-			</div>
-			
-		</div>
-		<!-- ./left-pane-->
 
-		<!-- right-pane --> 
-		<div class="right-panel">
-			<div class="icon-cube">
-				<div class="cube-slider">
-					<h4>Nepalese Cuisine</h4>
+			</div>
+			<!-- ./left-pane-->
+
+			<!-- right-pane -->
+			<div class="right-panel">
+				<div class="icon-cube">
+					<div class="cube-slider">
+						<h4>Nepalese Cuisine</h4>
+					</div>
+					<div class="icon-pane">
+						<i class="fa fa-cutlery"></i>
+					</div>
 				</div>
-				<div class="icon-pane">
-					<i class="fa fa-cutlery"></i>
+				<div class="icon-cube">
+					<div class="cube-slider">
+						<h4>Best Coffee</h4>
+					</div>
+					<div class="icon-pane">
+						<i class="fa fa-coffee"></i>
+					</div>
+				</div>
+				<div class="icon-cube">
+					<div class="cube-slider">
+						<h4>Home Stay</h4>
+					</div>
+					<div class="icon-pane">
+						<i class="fa fa-home"></i>
+					</div>
+				</div>
+				<div class="icon-cube">
+					<div class="cube-slider">
+						<h4>Bird Watching</h4>
+					</div>
+					<div class="icon-pane">
+						<i class="fa fa-camera"></i>
+					</div>
 				</div>
 			</div>
-			<div class="icon-cube">
-				<div class="cube-slider">
-					<h4>Best Coffee</h4>
-				</div>
-				<div class="icon-pane">
-					<i class="fa fa-coffee"></i>
-				</div>
-			</div>
-			<div class="icon-cube">
-				<div class="cube-slider">
-					<h4>Home Stay</h4>
-				</div>
-				<div class="icon-pane">
-					<i class="fa fa-home"></i>
-				</div>
-			</div>
-			<div class="icon-cube">
-				<div class="cube-slider">
-					<h4>Bird Watching</h4>
-				</div>
-				<div class="icon-pane">
-					<i class="fa fa-camera"></i>
-				</div>
-			</div>
+
 		</div>
-			
-		</div>
-		<!-- /.video-overlay -->
-	</section> 
+		<!-- /.bottom-icon-tiles-panel -->
+	</section>
 	<!-- /.hero -->
 	<div class="container">
+		<!-- deals-and-packages section -->
 		<section id="deals-and-packages">
 			<h3>Deals and packages</h3>
 			<div class="row">
 				<article class="col-md-4">
 					<div class="package-wrapper">
 						<div class="card package-card">
-							<img src="images/packages/safari.jpg" alt="" class="card-img-top">
+							<img src="src/assets/images/packages/safari.jpg" alt="" class="card-img-top">
 							<h5 class="package-card-heading">Safari Masti</h5>
 							<h4 class="package-price">$ 2900.59</h4>
 							<ul class="package-menu">
@@ -178,18 +185,18 @@
 								<li>Cultural Music</li>
 								<li>Camping</li>
 							</ul>
-							<p class="package-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua.</p>
-							<button class="btn btn-default btn-lg btn-price">Buy Now</button>
+							<p class="package-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<a type="button" href="#" class="btn btn-default btn-lg btn-price" data-toggle="modal" data-target="#creditCardPayment">Buy Now</a>
 						</div>
-						
+
 					</div>
-					
 				</article>
+
 				<article class="col-md-4">
 					<div class="package-wrapper">
 						<div class="card package-card">
-							<img src="images/packages/boudhanath.jpg" alt="" class="card-img-top">
+							<img src="src/assets/images/packages/boudhanath.jpg" alt="" class="card-img-top">
 							<h5 class="package-card-heading">Heritage Tour</h5>
 							<h4 class="package-price">$ 2900.49</h4>
 							<ul class="package-menu">
@@ -198,17 +205,17 @@
 								<li>City Cycling</li>
 								<li>Food Taste</li>
 							</ul>
-							<p class="package-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua.</p>
-							<button class="btn btn-default btn-lg btn-price">Buy Now</button>
+							<p class="package-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<a type="button" href="#" class="btn btn-default btn-lg btn-price" data-toggle="modal" data-target="#creditCardPayment">Buy Now</a>
 						</div>
-						
 					</div>
 				</article>
+
 				<article class="col-md-4">
 					<div class="package-wrapper">
 						<div class="card package-card">
-							<img src="images/packages/kathmandu.jpg" alt="" class="card-img-top">
+							<img src="src/assets/images/packages/kathmandu.jpg" alt="" class="card-img-top">
 							<h5 class="package-card-heading">Explore Kathmandu</h5>
 							<h4 class="package-price">$ 2900.99</h4>
 							<ul class="package-menu">
@@ -217,274 +224,296 @@
 								<li>Local Food</li>
 								<li>Cultural Dance</li>
 							</ul>
-							<p class="package-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua.</p>
-							
-							<button class="btn btn-default btn-lg btn-price">Buy Now</button>
+							<p class="package-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+							<a type="button" href="#" class="btn btn-default btn-lg btn-price" data-toggle="modal" data-target="#creditCardPayment">Buy Now</a>
 						</div>
-						
 					</div>
 				</article>
 			</div>
+			<!-- /.row -->
 		</section>
-		
+		<!-- / deals-and-packages section-->
+
+		<!-- thins-to-do section-->
 		<section id="things-to-do">
 			<h3>things to do</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet porro molestiae ex, 
-			iusto animi fugit magni eos est ducimus, inventore vitae earum adipisci saepe et voluptatum at iure doloremque, odit.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet porro molestiae ex, iusto animi fugit magni eos est ducimus,
+				inventore vitae earum adipisci saepe et voluptatum at iure doloremque, odit.</p>
 			<div class="row">
 				<article class="col-md-3 things-to-do-wrapper">
 					<div class="card things-to-do-card">
-						<img src="images/things-to-do/wild.jpg" class="things-to-do" alt="">
+						<img src="src/assets/images/things-to-do/wild.jpg" class="things-to-do" alt="">
 						<div class="things-to-do-overlay"></div>
-						<div class="things-to-do-heading"><h4>Wild Life</h4></div>
+						<div class="things-to-do-heading">
+							<h4>Wild Life</h4>
+						</div>
 					</div>
 				</article>
+
 				<article class="col-md-3 things-to-do-wrapper">
 					<div class="card things-to-do-card">
-						<img src="images/things-to-do/boating.jpg" class="things-to-do" alt="">
+						<img src="src/assets/images/things-to-do/boating.jpg" class="things-to-do" alt="">
 						<div class="things-to-do-overlay"></div>
-						<div class="things-to-do-heading"><h4>Boating</h4></div>
+						<div class="things-to-do-heading">
+							<h4>Boating</h4>
+						</div>
 					</div>
 				</article>
+
 				<article class="col-md-3 things-to-do-wrapper">
 					<div class="card things-to-do-card">
-						<img src="images/things-to-do/gokyo-lake.jpg" class="things-to-do" alt="">
+						<img src="src/assets/images/things-to-do/gokyo-lake.jpg" class="things-to-do" alt="">
 						<div class="things-to-do-overlay"></div>
-						<div class="things-to-do-heading"><h4>Lake View</h4></div>
+						<div class="things-to-do-heading">
+							<h4>Lake View</h4>
+						</div>
 					</div>
 				</article>
-					<article class="col-md-3 things-to-do-wrapper">
-					<div class="card things-to-do-card">
-						<img src="images/things-to-do/paragliding.jpg" class="things-to-do" alt="">
-						<div class="things-to-do-overlay"></div>
-						<div class="things-to-do-heading"><h4>Paraglide</h4></div>
-					</div>
-				</article>
+
 				<article class="col-md-3 things-to-do-wrapper">
 					<div class="card things-to-do-card">
-						<img src="images/things-to-do/gumba.jpg" class="things-to-do" alt="">
+						<img src="src/assets/images/things-to-do/paragliding.jpg" class="things-to-do" alt="">
 						<div class="things-to-do-overlay"></div>
-						<div class="things-to-do-heading"><h4>Temples</h4></div>
+						<div class="things-to-do-heading">
+							<h4>Paraglide</h4>
+						</div>
 					</div>
 				</article>
+
 				<article class="col-md-3 things-to-do-wrapper">
 					<div class="card things-to-do-card">
-						<img src="images/things-to-do/dashain.jpg" class="things-to-do" alt="">
+						<img src="src/assets/images/things-to-do/gumba.jpg" class="things-to-do" alt="">
 						<div class="things-to-do-overlay"></div>
-						<div class="things-to-do-heading"><h4>Festivals</h4></div>
+						<div class="things-to-do-heading">
+							<h4>Temples</h4>
+						</div>
 					</div>
 				</article>
+
 				<article class="col-md-3 things-to-do-wrapper">
 					<div class="card things-to-do-card">
-						<img src="images/things-to-do/city.jpg" class="things-to-do" alt="">
+						<img src="src/assets/images/things-to-do/dashain.jpg" class="things-to-do" alt="">
 						<div class="things-to-do-overlay"></div>
-						<div class="things-to-do-heading"><h4>City Surf</h4></div>
+						<div class="things-to-do-heading">
+							<h4>Festivals</h4>
+						</div>
 					</div>
 				</article>
+
 				<article class="col-md-3 things-to-do-wrapper">
 					<div class="card things-to-do-card">
-						<img src="images/things-to-do/rice-padding.jpg" class="things-to-do" alt="">
+						<img src="src/assets/images/things-to-do/city.jpg" class="things-to-do" alt="">
 						<div class="things-to-do-overlay"></div>
-						<div class="things-to-do-heading"><h4>Farming</h4></div>
+						<div class="things-to-do-heading">
+							<h4>City Surf</h4>
+						</div>
 					</div>
 				</article>
+
+				<article class="col-md-3 things-to-do-wrapper">
+					<div class="card things-to-do-card">
+						<img src="src/assets/images/things-to-do/rice-padding.jpg" class="things-to-do" alt="">
+						<div class="things-to-do-overlay"></div>
+						<div class="things-to-do-heading">
+							<h4>Farming</h4>
+						</div>
+					</div>
 				</article>
 			</div>
+			<!-- /.row -->
 		</section>
+		<!-- / things-to-do section -->
 
+		<!-- event section-->
 		<section id="events">
 			<h3>what's on</h3>
-			<p>Nepal is culutrally diverse country with variety of cast, religion and ethnicity.
-			The country celebrate various festivals all around the year and has its own calendar 
-			"Nepal Sambat".Some of the festivals you can celebrate with local this time around:</p>
+			<p>Nepal is culutrally diverse country with variety of cast, religion and ethnicity. The country celebrate various festivals
+				all around the year and has its own calendar "Nepal Sambat".Some of the festivals you can celebrate with local this time
+				around:
+			</p>
 
 			<div class="row">
 				<article class="col-md-4 col-lg-3">
 					<div class="event-wrapper">
-						<img class="event-thumbnail thumbnail" src="images/rara.jpg" alt="">
+						<img class="event-thumbnail thumbnail" src="src/assets/images/rara.jpg" alt="">
 						<div class="event-tag"><span>2<sup>nd</sup> Feb</span></div>
 					</div>
 					<div class="event-heading">Dashain</div>
-					<p class="event-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-					Minima officiis aspernatur voluptatem itaque fugit mollitia vitae veniam at eius ad 
-					optio quos minus unde nulla, dolorem dolor quisquam quasi est.</p>
+					<p class="event-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis aspernatur voluptatem itaque fugit mollitia
+						vitae veniam at eius ad optio quos minus unde nulla, dolorem dolor quisquam quasi est.</p>
 				</article>
 				<article class="col-md-4 col-lg-3">
 					<div class="event-wrapper">
-						<img class="event-thumbnail thumbnail" src="images/ropaijatra.jpg" alt="">
+						<img class="event-thumbnail thumbnail" src="src/assets/images/ropaijatra.jpg" alt="">
 						<div class="event-tag"><span>1<sup>st</sup> Jun</span></div>
 					</div>
 					<div class="event-heading">Dhan Ropai Jatra</div>
-					<p class="event-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-					Quas quaerat molestias ad laboriosam, aperiam, aliquam ipsum cupiditate porro dicta 
-					quasi beatae nisi neque, sequi iste asperiores fuga officiis praesentium fugit.</p>
+					<p class="event-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quaerat molestias ad laboriosam, aperiam, aliquam ipsum
+						cupiditate porro dicta quasi beatae nisi neque, sequi iste asperiores fuga officiis praesentium fugit.</p>
 				</article>
 				<article class="col-md-4 col-lg-3 ">
 					<div class="event-wrapper">
-						<img class="event-thumbnail thumbnail" src="images/kumari.jpg" alt="">
+						<img class="event-thumbnail thumbnail" src="src/assets/images/kumari.jpg" alt="">
 						<div class="event-tag"><span>23<sup>rd</sup>July</span></div>
 					</div>
 					<div class="event-heading">Kumari Puja</div>
-					<p class="event-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-					Amet, ipsum tenetur asperiores. Nam hic alias quas dolores totam itaque fuga cumque odit, 
-					reprehenderit debitis culpa quia quaerat ipsam quidem tenetur!</p>
+					<p class="event-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, ipsum tenetur asperiores. Nam hic alias quas dolores
+						totam itaque fuga cumque odit, reprehenderit debitis culpa quia quaerat ipsam quidem tenetur!</p>
 				</article>
 				<article class="col-md-4 col-lg-3">
 					<div class="event-wrapper">
-						<img class="event-thumbnail thumbnail" src="images/machhindranath.jpg" alt="">
+						<img class="event-thumbnail thumbnail" src="src/assets/images/machhindranath.jpg" alt="">
 						<div class="event-tag"><span>2<sup>nd</sup>Oct</span></div>
 					</div>
 					<div class="event-heading">Machhindranth Jatra</div>
-					<p class="event-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-					Minima officiis aspernatur voluptatem itaque fugit mollitia vitae veniam at eius ad 
-					optio quos minus unde nulla, dolorem dolor quisquam quasi est.</p>
+					<p class="event-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis aspernatur voluptatem itaque fugit mollitia
+						vitae veniam at eius ad optio quos minus unde nulla, dolorem dolor quisquam quasi est.</p>
 				</article>
-				
+
 			</div>
 		</section>
+		<!-- / event section -->
 
-		
 
-		<!-- Destination -->
+
+		<!-- destinations section -->
 		<section id="destinations">
 			<h3>Destinations</h3>
 			<div class="row">
 				<article class="col-md-4 col-lg-3">
 					<div class="destination-wrapper">
-						<img class="destination-thumbnail thumbnail" src="images/rara.jpg" alt="">
+						<img class="destination-thumbnail thumbnail" src="src/assets/images/rara.jpg" alt="">
 						<div class="destination-banner">Rara Lake</div>
 					</div>
 				</article>
 				<article class="col-md-4 col-lg-3">
 					<div class="destination-wrapper">
-							<img class="destination-thumbnail img-thumbnail" src="images/chitwan.jpg" alt="">
-							<div class="destination-banner">Chitwan National park</div>
+						<img class="destination-thumbnail img-thumbnail" src="src/assets/images/chitwan.jpg" alt="">
+						<div class="destination-banner">Chitwan National park</div>
 					</div>
-				</article >
+				</article>
 				<article class="col-md-4 col-lg-3">
 					<div class="destination-wrapper">
-						<img class="destination-thumbnail img-thumbnail" src="images/destination.jpg" alt="">
+						<img class="destination-thumbnail img-thumbnail" src="src/assets/images/destination.jpg" alt="">
 						<div class="destination-banner">Mustang</div>
 						<div class="destination-banner">Mustang</div>
 					</div>
-				</article >
+				</article>
 				<article class="col-md-4 col-lg-3">
 					<div class="destination-wrapper">
-						<img class="destination-thumbnail img-thumbnail" src="images/bhaktapur.jpg" alt="">
+						<img class="destination-thumbnail img-thumbnail" src="src/assets/images/bhaktapur.jpg" alt="">
 						<div class="destination-banner">Bhaktapur Square</div>
 					</div>
-				</article >
+				</article>
 				<article class="col-md-4 col-lg-3">
 					<div class="destination-wrapper">
-						<img class="destination-thumbnail img-thumbnail" src="images/mount.jpeg" alt="">
+						<img class="destination-thumbnail img-thumbnail" src="src/assets/images/mount.jpeg" alt="">
 						<div class="destination-banner">Mt. Everest</div>
 					</div>
 				</article>
 				<article class="col-md-4 col-lg-3">
 					<div class="destination-wrapper">
-						<img class="destination-thumbnail img-thumbnail" src="images/namche.jpg" alt="">
+						<img class="destination-thumbnail img-thumbnail" src="src/assets/images/namche.jpg" alt="">
 						<div class="destination-banner">Namche Trek</div>
 					</div>
-				</article >
+				</article>
 				<article class="col-md-4 col-lg-3">
 					<div class="destination-wrapper">
-						<img class="destination-thumbnail img-thumbnail" src="images/mustang.jpg" alt="">
+						<img class="destination-thumbnail img-thumbnail" src="src/assets/images/mustang.jpg" alt="">
 						<div class="destination-banner">Namche Trek</div>
 					</div>
-				</article >
+				</article>
 				<article class="col-md-4 col-lg-3">
 					<div class="destination-wrapper">
-						<img class="destination-thumbnail img-thumbnail" src="images/sarangkot.jpg" alt="">
+						<img class="destination-thumbnail img-thumbnail" src="src/assets/images/sarangkot.jpg" alt="">
 						<div class="destination-banner">Sarangkot</div>
 					</div>
-				</article >
-				
+				</article>
+
 			</div>
 		</section>
-		<!-- End of Destination Section -->
+		<!-- / Destination section -->
 
 
-	
-		<!-- Subscription Section-->
+
+		<!-- subscription section-->
 		<section id="subscription">
 			<h3>News letter</h3>
 			<p>Get our news letter, latest packages and offer in your email deliverd.</p>
 			<div class="row" class="subscription-form-wrapper">
 				<div class="col-md-12">
 					<form action="" role="form">
-					 <label class="sr-only" for="subscription">Username</label>
-					 <div class="input-group col-md-12">
-						<input type="email" 
-								name="visitor-email" 
-								placeholder="Email" 
-								class="col-sm-8 col-md-4 offset-md-4  form-control">
-						
-						<button type="button"class="btn btn-primary input-group-addon addon-btn" >Subscribe</button>
-					</div>
-					</form>	
+						<label class="sr-only" for="subscription">Username</label>
+						<div class="input-group col-md-12">
+							<input type="email" name="visitor-email" placeholder="Email" class="col-sm-8 col-md-4 offset-md-4  form-control">
+
+							<button type="button" class="btn btn-primary input-group-addon addon-btn">Subscribe</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</section>
-		<!-- End of Subscription Section -->
+		<!-- / subscription section -->
 	</div>
-</div>
-<!-- /.page-wrap -->
+	<!-- /.page-wrap -->
+	<!-- footer -->
+	<footer class="main-footer">
+		<div class="container">
+			<div class="row footer-top">
 
-<footer class="main-footer">
-	<div class="container">
-		<div class="row footer-top">
-			
-			<div class="col-md-3 footer-top-col">
-				<h5>DESTINATION</h5>
-				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">City</a></li>
-					<li><a href="">Hotels</a></li>
-					<li><a href="">Safari</a></li>
-					<li><a href="">Adventure</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3 footer-top-col">
-				<h5>THINGS TO DO</h5>
-				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">City</a></li>
-					<li><a href="">Hotels</a></li>
-					<li><a href="">Safari</a></li>
-					<li><a href="">Adventure</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3 footer-top-col">
-				<h5>EVENTS</h5>
-				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">City</a></li>
-					<li><a href="">Hotels</a></li>
-					<li><a href="">Safari</a></li>
-					<li><a href="">Adventure</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3 footer-top-col"><ul>
-				<h5>INFORMATION</h5>
-					<li><a href="">Home</a></li>
-					<li><a href="">City</a></li>
-					<li><a href="">Hotels</a></li>
-					<li><a href="">Safari</a></li>
-					<li><a href="">Adventure</a></li>
-				</ul>
-			</div>
-			
+				<div class="col-md-3 footer-top-col">
+					<h5>DESTINATION</h5>
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">City</a></li>
+						<li><a href="">Hotels</a></li>
+						<li><a href="">Safari</a></li>
+						<li><a href="">Adventure</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-top-col">
+					<h5>THINGS TO DO</h5>
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">City</a></li>
+						<li><a href="">Hotels</a></li>
+						<li><a href="">Safari</a></li>
+						<li><a href="">Adventure</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-top-col">
+					<h5>EVENTS</h5>
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">City</a></li>
+						<li><a href="">Hotels</a></li>
+						<li><a href="">Safari</a></li>
+						<li><a href="">Adventure</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-top-col">
+					<ul>
+						<h5>INFORMATION</h5>
+						<li><a href="">Home</a></li>
+						<li><a href="">City</a></li>
+						<li><a href="">Hotels</a></li>
+						<li><a href="">Safari</a></li>
+						<li><a href="">Adventure</a></li>
+					</ul>
+				</div>
+
 			</div>
 			<!-- /.footer-top -->
 
 			<div class="row footer-bottom">
 				<div class="col-sm-6">
 					<ul class="footer-images">
-					<li><img class="we-love-nepal"src="images/logos/footer-logo.png" alt=""></li>
-					<li><img class="ntb" src="images/logos/nepal-tourism-board-logo.png" alt=""></li>
-					<li><img class="ntb" src="images/logos/sprouttech-logo.png" alt=""></li>
-				</ul>
+						<li><img class="we-love-nepal" src="src/assets/images/logos/footer-logo.png" alt=""></li>
+						<li><img class="ntb" src="src/assets/images/logos/nepal-tourism-board-logo.png" alt=""></li>
+						<li><img class="ntb" src="src/assets/images/logos/sprouttech-logo.png" alt=""></li>
+					</ul>
 				</div>
 
 				<div class="col-sm-6">
@@ -492,14 +521,97 @@
 				</div>
 			</div>
 			<!-- /.footer-bottom -->
+		</div>
+		<!-- /.container -->
+	</footer>
+
+
+	<!-- credit-card-modal -->
+	<div class="modal fade" id="creditCardPayment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Payment</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+				</div>
+				<div class="modal-body">
+					<!-- CREDIT CARD FORM STARTS HERE -->
+					<div class="panel panel-default credit-card-box">
+						<div class="panel-heading display-table">
+							<div class="row display-tr">
+								<h4 class="panel-title display-td">Payment Details</h4>
+								<div class="display-td">
+									<img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+								</div>
+							</div>
+						</div>
+						<div class="panel-body">
+							<form role="form" id="payment-form" method="POST" action="javascript:void(0);">
+								<div class="row">
+									<div class="col-md-10 offset-md-1">
+										<div class="form-group">
+											<label for="cardNumber">CARD NUMBER</label>
+											<div class="input-group">
+												<input type="tel" class="form-control" name="cardNumber" placeholder="Valid Card Number" autocomplete="cc-number" required
+												 autofocus />
+												<span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-5 offset-md-1">
+										<div class="form-group">
+											<label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+											<input type="tel" class="form-control" name="cardExpiry" placeholder="MM / YY" autocomplete="cc-exp" required />
+										</div>
+									</div>
+									<div class="col-md-3 offset-md-1">
+										<div class="form-group">
+											<label for="cardCVC">CV CODE</label>
+											<input type="tel" class="form-control" name="cardCVC" placeholder="CVC" autocomplete="cc-csc" required />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-10 offset-md-1">
+										<div class="form-group">
+											<label for="couponCode">COUPON CODE</label>
+											<input type="text" class="form-control" name="couponCode" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-10 offset-md-1">
+										<button class="subscribe btn btn-success btn-lg btn-block" type="button">Buy Package</button>
+									</div>
+								</div>
+								<div class="row" style="display:none;">
+									<div class="col-xs-12">
+										<p class="payment-errors"></p>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- CREDIT CARD FORM ENDS HERE -->
+				</div>
+
+			</div>
+		</div>
 	</div>
-	<!-- /.container -->
-</footer>
-
-<script>	
-<script type="text/javascript">
-
-</script>
-</script>
+	<!-- /.credit-card-modal -->
+	<!-- Bootstrap js-->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+	 crossorigin="anonymous"></script>
+	<script type="text/javascript" src="bower_components/df-visible/jquery.visible.js"></script>
+	<script type="text/javascript" src="src/assets/scripts/app.js"></script>
 </body>
+
 </html>

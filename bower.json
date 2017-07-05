@@ -1,0 +1,28 @@
+{
+  "name": "visitnepal",
+  "description": "bootstrap landing page template",
+  "main": "index.html",
+  "authors": [
+    "ryan basnet"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "bootstrap",
+    "landing",
+    "page",
+    "html5",
+    "template"
+  ],
+  "homepage": "https://github.com/ryanbasnet/VisitNepal",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "https://github.com/twbs/bootstrap.git#^3.3.7",
+    "df-visible": "https://github.com/customd/jquery-visible.git#^1.2.0"
+  }
+}

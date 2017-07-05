@@ -1,6 +1,6 @@
 # VisitNepal
 
-HTML5 landing page template.
+HTML5 landing page template using bootstrap-dev-v4.
 
 ## Authors
 
@@ -10,6 +10,11 @@ HTML5 landing page template.
 
 * [Bootstrap](http://www.dropwizard.io/1.0.2/docs/) - Css framework used
 * [Alaska - Timelapse Film 4K](https://www.youtube.com/watch?v=Oduc2CImtXM) - Video background used
+
+## Tools
+
+* npm
+* bower
 
 ## License
 

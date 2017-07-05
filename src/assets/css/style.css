@@ -148,11 +148,10 @@ section{
 	color:#FFF;
 }
 
-.navbar-light .hamburger{
+#hamburger{
 
 	border-color:#FFCC00;
-	margin-bottom: 0 !important;
-	bottom:0.6rem;
+	top:0.6rem;
 }
 
  .navbar-light .navbar-toggler{
@@ -195,7 +194,19 @@ section{
 	overflow: hidden;
 }
 
+.video-audio{
 
+	position:absolute;
+	top:80px;
+	right:10px;
+	color:#FFF !important;
+	font-size:25px;
+	z-index: 9999;
+}
+.video-audio i{
+	color:#FFF !important;
+	font-size:25px;
+}
 .intro-video{
 
 	height:100%;
@@ -310,6 +321,55 @@ section{
 	text-align: center;
 	margin:0 auto;
 	margin-top: 30px;
+}
+/* -- credit-card-payment --*/
+
+.credit-card-box{
+	/*outline:1px red solid;*/
+}
+/* CSS for Credit Card Payment form */
+.credit-card-box .panel-title {
+    display: inline;
+    font-weight: bold;
+}
+
+.credit-card-box .form-control.error {
+    border-color: red;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,0,0,0.6);
+}
+
+.credit-card-box label.error {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+
+.credit-card-box .payment-errors {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+
+.credit-card-box label {
+    display: block;
+}
+
+/* The old "center div vertically" hack */
+.credit-card-box .display-table {
+    display: table;
+}
+
+.credit-card-box .display-tr {
+    display: table-row;
+}
+
+.credit-card-box .display-td {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
 }
 
 /* ---- Things-to-do ---- */
@@ -822,7 +882,7 @@ button.addon-btn{
 
 	#navbar-top-custom .navbar-nav{
 
-		margin-left:250px;
+		margin-left:50px;
 	}
 	.package-wrapper{
 
